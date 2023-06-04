@@ -1,0 +1,6 @@
+{
+    "id": "auto-login",
+    "name": "自动登录",
+    "author": "Flysoft",
+    "injections": [{ "type": "renderer", "script": "main.js", "page": "login" }]
+}

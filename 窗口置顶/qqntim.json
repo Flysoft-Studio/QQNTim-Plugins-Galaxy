@@ -1,0 +1,9 @@
+{
+    "id": "topmost",
+    "name": "窗口置顶",
+    "author": "Flysoft",
+    "injections": [
+        { "type": "main", "script": "main.js" },
+        { "type": "renderer", "script": "renderer.js", "page": "main" }
+    ]
+}

@@ -1,0 +1,6 @@
+{
+    "id": "gaussian-ui",
+    "name": "GaussianUI (暂未完成)",
+    "author": "Flysoft",
+    "injections": [{ "type": "renderer", "script": "main.js", "stylesheet": "style.css" }]
+}

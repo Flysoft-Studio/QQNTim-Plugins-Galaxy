@@ -1,0 +1,196 @@
+body {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.q-theme-tokens-light {
+    background-color: #a1a1a1;
+    --bg_grey_standard: #f2f2f255;
+    --bg_white: #ffffff00;
+    --bg_list: var(--bg_grey_standard);
+    --bubble_guest: #f2f2f248;
+    --fg_white: #ffffff6b;
+    --fg_grey_light: #ffffff42;
+    --icon_primary: #3a3a3aff;
+    --icon_secondary_01: #000000ff;
+    --text_secondary_01: #444444;
+    --_icon_primary: #1f1f1fff;
+    --_bg_layer: #ffffff42;
+    --_fg_solid: #ffffffff;
+}
+
+.q-theme-tokens-dark {
+    background-color: #464646;
+    --bg_grey_standard: #1a1a1a4f;
+    --bg_white: #00000000;
+    --bg_list: var(--bg_grey_standard);
+    --bubble_guest: #1a1a1a4f;
+    --fg_white: #26262687;
+    --icon_secondary_01: #ebebebff;
+    --_icon_primary: #ffffffff;
+    --_bg_layer: #36363625;
+    --_fg_solid: #262626ff;
+}
+
+.searchPage {
+    background: var(--bg_list) !important;
+}
+
+.q-icon,
+.icon-item {
+    --hover-color: var(--_icon_primary) !important;
+}
+
+.func-bar .bar-icon .arrow .q-icon:hover,
+.func-bar .hover-all:hover .q-icon {
+    color: var(--_icon_primary) !important;
+}
+
+.tab-item-img-highlight__eyes {
+    display: none;
+}
+
+.tab-item-img-mask {
+    background: var(--_icon_primary);
+}
+
+.sidebar-icon .q-icon:hover,
+.mail-item .q-icon:hover {
+    color: var(--_icon_primary);
+}
+
+.search .search-input {
+    background: var(--_bg_layer);
+}
+
+.q-collapse-item.q-collapse-item--active > .q-collapse-item__header {
+    background: var(--_bg_layer);
+    border-radius: 5px;
+}
+
+.viewport-list__inner {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    gap: 2px;
+    padding: 3px;
+}
+
+.viewport-list,
+.viewport-list__inner,
+.selector-dialog .selector,
+.selector-dialog .selector .selector-layout__friends_list .q-collapse-item__header,
+.selector-dialog .selector .list-item {
+    background: none !important;
+}
+
+.across-mode.list-item--selected,
+#app
+    .recent-contact-item.across-mode.recent-contact-item--selected
+    .list-item__container {
+    background: var(--_bg_layer) !important;
+}
+
+.across-mode.list-item {
+    border-radius: 5px;
+    --on_brand_primary: var(--text-primary);
+    --on_brand_secondary: var(--on_bg_text);
+}
+
+.radio-tab .radio-tab__item.radio-tab__item--selected {
+    color: var(--text-primary) !important;
+}
+
+.bg-color-counts-1 {
+    --side-list-bg: var(--bg_grey_standard) !important;
+}
+
+.window-control-area .q-icon {
+    color: var(--_icon_primary) !important;
+}
+
+*:not(.profile__body) > .buddy-profile {
+    background: var(--_bg_layer) !important;
+}
+
+.group-panel {
+    border-left: none !important;
+}
+
+.contact-layout .q-divider {
+    display: none;
+}
+
+.aio,
+.profile {
+    background: var(--bg_grey_standard) !important;
+}
+
+.setting-tab,
+.setting-main {
+    background: var(--bg_grey_standard) !important;
+}
+
+.setting-tab {
+    backdrop-filter: none;
+}
+
+.msg-content-container.container--others {
+    background: var(--bg_grey_standard);
+}
+
+.record-all-msg .msg-content-container.container--others {
+    background: transparent;
+    backdrop-filter: none;
+}
+
+.side-panel,
+.q-pulldown-menu-wrapper {
+    background: var(--_fg_solid) !important;
+}
+
+.sticker-panel {
+    background: var(--fg_white) !important;
+}
+
+.image.sticker-row-item-img {
+    background: transparent;
+}
+
+.q-dialog-main,
+.file-element,
+.group-box,
+.sticker-panel,
+*:not(.profile__body) > .buddy-profile,
+.setting-main__content > div > div:not(.setting-main-title, .setting-item-title, .popup),
+.setting-main__content > div > .popup > div:not(.setting-main-title, .setting-item-title),
+.msg-content-container.container--others,
+.chat-msg-area__tip--bottom,
+.panel-header,
+.chat-input-area {
+    backdrop-filter: blur(30px);
+}
+
+.q-context-menu::after,
+.q-context-sub-menu__container::after {
+    z-index: -1;
+    position: absolute;
+    left: 0;
+    right: 0;
+    content: "";
+    top: 0;
+    bottom: 0;
+    backdrop-filter: blur(30px);
+}
+
+.sidebar {
+    background: var(--bg_list) !important;
+    backdrop-filter: blur(60px);
+}
+
+.recent-contact,
+.contact {
+    background: var(--bg_list) !important;
+    backdrop-filter: blur(60px);
+}
