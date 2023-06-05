@@ -1,0 +1,9 @@
+.window-control-area > *:not(._plugin),
+.bone {
+    display: none !important;
+}
+
+body,
+.login-container {
+    background: none !important;
+}

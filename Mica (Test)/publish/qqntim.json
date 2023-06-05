@@ -1,0 +1,16 @@
+{
+    "id": "mica",
+    "name": "Mica 背景 (测试)",
+    "author": "Flysoft",
+    "injections": [
+        {
+            "type": "main",
+            "script": "main.js"
+        },
+        {
+            "type": "renderer",
+            "script": "renderer.js",
+            "stylesheet": "style.css"
+        }
+    ]
+}
