@@ -1,7 +1,7 @@
 const electron = require("electron");
 
 module.exports = (qqntim) => {
-    qqntim.onLoad(() => {
+    qqntim.windowLoadPromise.then(() => {
         electron.ipcRenderer.send("___!mica:try_load");
         electron.ipcRenderer.on("___!mica:load", () => {
             electron.ipcRenderer.send("___!mica:enable");
