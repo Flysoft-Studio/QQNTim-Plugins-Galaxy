@@ -1,0 +1,6 @@
+{
+    "id": "wallpaper",
+    "name": "壁纸",
+    "author": "Flysoft",
+    "injections": [{ "type": "renderer", "script": "renderer.js" }]
+}
