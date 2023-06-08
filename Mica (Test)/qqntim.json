@@ -2,6 +2,9 @@
     "id": "mica",
     "name": "Mica 背景 (测试)",
     "author": "Flysoft",
+    "requirements": {
+        "os": [{ "platform": "win32", "gte": "10.0.22621" }]
+    },
     "injections": [
         {
             "type": "main",
@@ -9,8 +12,8 @@
         },
         {
             "type": "renderer",
-            "script": "renderer.js",
-            "stylesheet": "style.css"
+            "stylesheet": "style.css",
+            "script": "renderer.js"
         }
     ]
 }

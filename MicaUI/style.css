@@ -1,0 +1,36 @@
+.q-theme-tokens-light {
+    --bubble_guest: #0000000d;
+}
+
+.q-theme-tokens-dark {
+    --bubble_guest: #ffffff0d;
+}
+
+.sidebar,
+.tab-container,
+.chat-header,
+.group-box,
+.recent-contact,
+.contact,
+.recent-contact-default-theme-list.q-scroll-view .viewport-list__inner,
+.guild-list-wrapper-win,
+.session-container,
+.chat-session-main,
+.tab .tab-header,
+.sys-notify,
+.q-collapse-item > .q-collapse-item__header,
+.profile {
+    background: none !important;
+}
+
+.viewport-list__inner {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    gap: 2px;
+    padding: 3px;
+}
+
+.across-mode.list-item {
+    border-radius: 5px;
+}

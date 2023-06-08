@@ -1,0 +1,11 @@
+{
+    "id": "mica-ui",
+    "name": "MicaUI",
+    "author": "Flysoft",
+    "injections": [
+        {
+            "type": "renderer",
+            "stylesheet": "style.css"
+        }
+    ]
+}
