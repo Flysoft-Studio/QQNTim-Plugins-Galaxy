@@ -1,5 +1,5 @@
 module.exports = (qqntim) => {
-    qqntim.onLoad(() => {
+    qqntim.windowLoadPromise.then(() => {
         let observer = new MutationObserver(() => {
             const loginBtnText = document.querySelector(
                 ".auto-login>.q-button.q-button--primary.q-button--default>span"
