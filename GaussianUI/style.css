@@ -14,6 +14,7 @@ body {
     --fg_grey_light: #ffffff42;
     --icon_primary: #3a3a3aff;
     --icon_secondary_01: #000000ff;
+    --icon_secondary_02: #000000ff;
     --text_secondary_01: #444444;
     --_icon_primary: #1f1f1fff;
     --_bg_layer: #ffffff42;
@@ -27,7 +28,8 @@ body {
     --bg_list: var(--bg_grey_standard);
     --bubble_guest: #1a1a1a4f;
     --fg_white: #26262687;
-    --icon_secondary_01: #ebebebff;
+    --icon_secondary_01: #c9c9c9ff;
+    --icon_secondary_02: #c9c9c9ff;
     --_icon_primary: #ffffffff;
     --_bg_layer: #36363625;
     --_fg_solid: #262626ff;
@@ -99,6 +101,10 @@ body {
     --on_brand_secondary: var(--on_bg_text);
 }
 
+.across-mode.list-item--selected .list-item__content .list-item__summary .q-icon {
+    color: var(--icon_secondary_02) !important;
+}
+
 .radio-tab .radio-tab__item.radio-tab__item--selected {
     color: var(--text-primary) !important;
 }
@@ -141,18 +147,19 @@ body {
     background: var(--bg_grey_standard);
 }
 
+.reply-element {
+    border-left: none !important;
+}
+
 .record-all-msg .msg-content-container.container--others {
     background: transparent;
     backdrop-filter: none;
 }
 
+.sticker-panel,
 .side-panel,
 .q-pulldown-menu-wrapper {
     background: var(--_fg_solid) !important;
-}
-
-.sticker-panel {
-    background: var(--fg_white) !important;
 }
 
 .image.sticker-row-item-img {
@@ -162,7 +169,6 @@ body {
 .q-dialog-main,
 .file-element,
 .group-box,
-.sticker-panel,
 *:not(.profile__body) > .buddy-profile,
 .setting-main__content > div > div:not(.setting-main-title, .setting-item-title, .popup),
 .setting-main__content > div > .popup > div:not(.setting-main-title, .setting-item-title),
@@ -172,6 +178,10 @@ body {
 .chat-input-area,
 .q-toast-item {
     backdrop-filter: blur(30px);
+}
+
+.chat-input-area {
+    z-index: 1;
 }
 
 .q-context-menu::after,
