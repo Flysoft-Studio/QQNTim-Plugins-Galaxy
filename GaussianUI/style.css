@@ -19,6 +19,7 @@ body {
     --_icon_primary: #1f1f1fff;
     --_bg_layer: #ffffff42;
     --_fg_solid: #ffffffff;
+    --_scrollbar: #00000014;
 }
 
 .q-theme-tokens-dark {
@@ -33,6 +34,7 @@ body {
     --_icon_primary: #ffffffff;
     --_bg_layer: #36363625;
     --_fg_solid: #262626ff;
+    --_scrollbar: #ffffff14;
 }
 
 .searchPage,
@@ -103,6 +105,12 @@ body {
 
 .across-mode.list-item--selected .list-item__content .list-item__summary .q-icon {
     color: var(--icon_secondary_02) !important;
+}
+
+.q-scroll-view .scroll-view--scrollbar-side:hover,
+.q-scroll-view.scroll-view--always-show-scrollbar,
+.q-scroll-view.scroll-view--show-scrollbar:hover {
+    color: var(--_scrollbar) !important;
 }
 
 .radio-tab .radio-tab__item.radio-tab__item--selected {
