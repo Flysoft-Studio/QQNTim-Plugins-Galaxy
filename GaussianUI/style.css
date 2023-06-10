@@ -88,7 +88,7 @@ body {
     background: none !important;
 }
 
-.across-mode.list-item--selected,
+#app .across-mode.list-item--selected,
 #app
     .recent-contact-item.across-mode.recent-contact-item--selected
     .list-item__container {
