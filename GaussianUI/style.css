@@ -170,8 +170,62 @@ body {
 .file-element,
 .group-box,
 *:not(.profile__body) > .buddy-profile,
-.setting-main__content > div > div:not(.setting-main-title, .setting-item-title, .popup),
-.setting-main__content > div > .popup > div:not(.setting-main-title, .setting-item-title),
+.setting-main__content
+    > div:not(.q-scroll-view)
+    > div:not(
+        .setting-main-title,
+        .setting-item-title,
+        .popup,
+        .shotcut,
+        .storage-space,
+        .super-palette
+    ),
+.setting-main__content
+    > div:not(.q-scroll-view)
+    > .popup
+    > div:not(
+        .setting-main-title,
+        .setting-item-title,
+        .shotcut,
+        .storage-space,
+        .super-palette
+    ),
+.setting-main__content
+    > .q-scroll-view
+    > div
+    > div:not(
+        .setting-main-title,
+        .setting-item-title,
+        .popup,
+        .shotcut,
+        .storage-space,
+        .super-palette
+    ),
+.setting-main__content
+    > .q-scroll-view
+    > div
+    > .popup
+    > div:not(
+        .setting-main-title,
+        .setting-item-title,
+        .shotcut,
+        .storage-space,
+        .super-palette
+    ),
+.setting-main__content
+    > div:not(.q-scroll-view)
+    > div
+    > .storage-space
+    > div:not(.storage-chart),
+.setting-main__content > .q-scroll-view > div > .storage-space > div:not(.storage-chart),
+.setting-main__content > div:not(.q-scroll-view) > div > .shotcut > div,
+.setting-main__content > .q-scroll-view > div > .shotcut > div,
+.setting-main__content
+    > div:not(.q-scroll-view)
+    > div
+    > .super-palette
+    > div:not(.preview-area),
+.setting-main__content > .q-scroll-view > div > .super-palette > div:not(.preview-area),
 .msg-content-container.container--others,
 .chat-msg-area__tip--bottom,
 .panel-header,
