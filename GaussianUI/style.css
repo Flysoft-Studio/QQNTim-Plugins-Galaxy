@@ -121,10 +121,6 @@ body {
     --side-list-bg: var(--bg_grey_standard) !important;
 }
 
-.window-control-area .q-icon {
-    color: var(--_icon_primary) !important;
-}
-
 *:not(.profile__body) > .buddy-profile {
     background: var(--_bg_layer) !important;
 }
