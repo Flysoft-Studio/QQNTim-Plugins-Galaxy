@@ -157,6 +157,14 @@ body {
     border-left: none !important;
 }
 
+.forward-msg {
+    background: var(--bg_grey_standard) !important;
+}
+
+.forward-msg > .count {
+    border-top: none !important;
+}
+
 .record-all-msg .msg-content-container.container--others {
     background: transparent;
     backdrop-filter: none;
@@ -233,6 +241,7 @@ body {
     > div:not(.preview-area),
 .setting-main__content > .q-scroll-view > div > .super-palette > div:not(.preview-area),
 .msg-content-container.container--others,
+.forward-msg,
 .chat-msg-area__tip--bottom,
 .panel-header,
 .chat-input-area,
