@@ -23,6 +23,10 @@
     background: none !important;
 }
 
+.buddy-profile {
+    background: var(--fg_white) !important;
+}
+
 .viewport-list__inner {
     display: flex;
     flex-direction: column;
