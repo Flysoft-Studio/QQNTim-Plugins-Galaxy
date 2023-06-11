@@ -4,6 +4,6 @@
     "author": "Flysoft",
     "injections": [
         { "type": "main", "script": "main.js" },
-        { "type": "renderer", "script": "renderer.js", "page": "main" }
+        { "type": "renderer", "script": "renderer.js", "page": ["main", "chat"] }
     ]
 }
