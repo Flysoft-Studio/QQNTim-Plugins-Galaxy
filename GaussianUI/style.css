@@ -15,6 +15,7 @@ body {
     --icon_primary: #3a3a3aff;
     --icon_secondary_01: #000000ff;
     --icon_secondary_02: #000000ff;
+    --on_bg_text: #00000080;
     --text_secondary_01: #444444;
     --_icon_primary: #1f1f1fff;
     --_bg_layer: #ffffff42;
@@ -31,6 +32,7 @@ body {
     --fg_white: #26262687;
     --icon_secondary_01: #c9c9c9ff;
     --icon_secondary_02: #c9c9c9ff;
+    --on_bg_text: #ffffff80;
     --_icon_primary: #ffffffff;
     --_bg_layer: #36363625;
     --_fg_solid: #262626ff;
@@ -222,8 +224,8 @@ body {
     > .storage-space
     > div:not(.storage-chart),
 .setting-main__content > .q-scroll-view > div > .storage-space > div:not(.storage-chart),
-.setting-main__content > div:not(.q-scroll-view) > div > .shotcut > div,
-.setting-main__content > .q-scroll-view > div > .shotcut > div,
+.setting-main__content > div:not(.q-scroll-view) > .shotcut > div,
+.setting-main__content > .q-scroll-view > .shotcut > div,
 .setting-main__content
     > div:not(.q-scroll-view)
     > div
@@ -240,6 +242,10 @@ body {
 
 .chat-input-area {
     z-index: 1;
+}
+
+.chat-header {
+    z-index: 2;
 }
 
 .q-context-menu::after,
