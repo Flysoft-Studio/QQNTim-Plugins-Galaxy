@@ -1,6 +1,6 @@
 {
     "id": "mica",
-    "name": "Mica 背景 (测试)",
+    "name": "Mica 背景",
     "author": "Flysoft",
     "requirements": {
         "os": [{ "platform": "win32", "gte": "10.0.22621" }]
