@@ -3,7 +3,7 @@
     "name": "系统主题色",
     "author": "Flysoft",
     "requirements": {
-        "os": [{ "platform": "win32", "gte": "6.2" }, { "platform": "darwin" }]
+        "os": [{ "platform": "win32", "gte": "6.2.0" }, { "platform": "darwin" }]
     },
     "injections": [
         { "type": "main", "script": "main.js" },
