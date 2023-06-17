@@ -64,11 +64,20 @@ body {
 
 .sidebar-icon .q-icon:hover,
 .mail-item .q-icon:hover {
-    color: var(--_icon_primary);
+    color: var(--_icon_primary) !important;
 }
 
 .search .search-input {
     background: var(--_bg_layer);
+}
+
+.main-search .search-result.aggregate-search.empty .q-empty-page.initial-empty-page {
+    display: flex !important;
+}
+
+.search-result .list-item.global:first-child:after,
+.search-result .list-item.global:first-child:before {
+    display: none !important;
 }
 
 .q-collapse-item.q-collapse-item--active > .q-collapse-item__header {
@@ -103,6 +112,15 @@ body {
     border-radius: 5px;
     --on_brand_primary: var(--text-primary);
     --on_brand_secondary: var(--on_bg_text);
+}
+
+.across-mode.list-item--selected
+    .list-item__content
+    .list-item__info
+    .list-item__title
+    .secondary-info
+    span {
+    color: var(--on_brand_secondary) !important;
 }
 
 .across-mode.list-item--selected .list-item__content .list-item__summary .q-icon {
