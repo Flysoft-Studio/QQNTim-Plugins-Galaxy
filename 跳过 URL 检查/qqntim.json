@@ -1,0 +1,6 @@
+{
+    "id": "skip-url-check",
+    "name": "跳过 URL 检查",
+    "author": "Flysoft",
+    "injections": [{ "type": "main", "script": "main.js" }]
+}
