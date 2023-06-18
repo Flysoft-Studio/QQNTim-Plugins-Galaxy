@@ -3,7 +3,7 @@
     "name": "Mica 背景",
     "author": "Flysoft",
     "requirements": {
-        "os": [{ "platform": "win32", "gte": "10.0.22621" }]
+        "os": [{ "platform": "win32", "lte": "10.0.22621" }]
     },
     "injections": [
         {
