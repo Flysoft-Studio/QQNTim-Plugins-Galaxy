@@ -6,9 +6,16 @@ body {
 
 .q-theme-tokens-light {
     background-color: #a1a1a1;
+    --bg_top_primary: var(--fg_white);
+    --bg_top_light: var(--fg_white);
+    --bg_bottom_standard: #ffffff00;
+    --bg_bottom_light: #ffffff00;
+    --bg_nav: #ffffff00;
+    --bg_nav_secondary: var(--bg_grey_standard);
     --bg_grey_standard: #f2f2f255;
     --bg_white: #ffffff00;
     --bg_list: var(--bg_grey_standard);
+    --fill_light_primary: var(--bg_grey_standard);
     --bubble_guest: #f2f2f248;
     --fg_white: #ffffff6b;
     --fg_grey_light: #ffffff42;
@@ -25,9 +32,16 @@ body {
 
 .q-theme-tokens-dark {
     background-color: #464646;
+    --bg_top_primary: var(--fg_white);
+    --bg_top_light: var(--fg_white);
+    --bg_bottom_standard: #00000000;
+    --bg_bottom_light: #ffffff00;
+    --bg_nav: #00000000;
+    --bg_nav_secondary: var(--bg_grey_standard);
     --bg_grey_standard: #1a1a1a4f;
     --bg_white: #00000000;
     --bg_list: var(--bg_grey_standard);
+    --fill_light_primary: var(--bg_grey_standard);
     --bubble_guest: #1a1a1a4f;
     --fg_white: #26262687;
     --icon_secondary_01: #c9c9c9ff;
@@ -198,6 +212,10 @@ body {
     background: transparent;
 }
 
+.file-area-container-group-file-footer {
+    background: transparent !important;
+}
+
 .q-dialog-main,
 .file-element,
 .group-box,
@@ -250,8 +268,8 @@ body {
     > .storage-space
     > div:not(.storage-chart),
 .setting-main__content > .q-scroll-view > div > .storage-space > div:not(.storage-chart),
-.setting-main__content > div:not(.q-scroll-view) > .shotcut > div,
-.setting-main__content > .q-scroll-view > .shotcut > div,
+.setting-main__content > div:not(.q-scroll-view) > div > .shotcut > div,
+.setting-main__content > .q-scroll-view > div > .shotcut > div,
 .setting-main__content
     > div:not(.q-scroll-view)
     > div
@@ -263,7 +281,8 @@ body {
 .chat-msg-area__tip--bottom,
 .panel-header,
 .chat-input-area,
-.q-toast-item {
+.q-toast-item,
+.file-list-normal-scroll {
     backdrop-filter: blur(30px);
 }
 
@@ -273,6 +292,12 @@ body {
 
 .chat-header {
     z-index: 2;
+}
+
+.nav-bar-container,
+.setting-tab {
+    backdrop-filter: blur(100px) !important;
+    background: var(--bg_nav_secondary) !important;
 }
 
 .q-context-menu::after,
