@@ -1,0 +1,6 @@
+{
+    "id": "show-revoked-messages",
+    "name": "防撤回",
+    "author": "Flysoft",
+    "injections": [{ "type": "renderer", "script": "renderer.js" }]
+}
