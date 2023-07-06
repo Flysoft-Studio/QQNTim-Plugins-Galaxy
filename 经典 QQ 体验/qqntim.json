@@ -1,0 +1,13 @@
+{
+    "id": "legacy-qq-experience",
+    "name": "经典 QQ 体验",
+    "author": "Flysoft",
+    "injections": [
+        {
+            "type": "renderer",
+            "page": "main",
+            "stylesheet": "style.css",
+            "script": "renderer.js"
+        }
+    ]
+}

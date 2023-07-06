@@ -1,0 +1,15 @@
+.aio {
+    display: none !important;
+}
+
+.recent-contact {
+    width: 100% !important;
+}
+
+.recent-contact .viewport-list .viewport-list__inner .list-item {
+    pointer-events: none;
+}
+
+.recent-contact .viewport-list .viewport-list__inner .list-item * {
+    pointer-events: all;
+}
