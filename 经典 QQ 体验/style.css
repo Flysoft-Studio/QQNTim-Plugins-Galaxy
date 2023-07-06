@@ -1,8 +1,12 @@
+.message-panel > .two-col-layout .two-col-layout__main,
 .aio {
     display: none !important;
 }
 
-.recent-contact {
+.recent-contact,
+.message-panel > .two-col-layout .two-col-layout__aside {
+    max-width: none !important;
+    min-width: none !important;
     width: 100% !important;
 }
 

@@ -18,7 +18,7 @@ module.exports = (qqntim) => {
                 .waitForElement(`.sidebar__nav .nav-item:nth-child(1) .svg-highlight`)
                 .then(() => {
                     useRecentContactSize();
-                    setTimeout(watchNavFirstTab, 0);
+                    setTimeout(watchNavOtherTab, 0);
                 });
         };
         const watchNavOtherTab = () => {
@@ -28,7 +28,7 @@ module.exports = (qqntim) => {
                 )
                 .then(() => {
                     useContactSize();
-                    setTimeout(watchNavOtherTab, 0);
+                    setTimeout(watchNavFirstTab, 0);
                 });
         };
         const patchRecentContact = () => {
@@ -40,7 +40,8 @@ module.exports = (qqntim) => {
                     setTimeout(patchRecentContact, 0);
                     if (list.classList.contains(patchedFlag)) return;
                     list.classList.add(patchedFlag);
-                    let observer = new MutationObserver(() => {
+
+                    const refreshState = () => {
                         for (const child of list.children) {
                             if (child.classList.contains(patchedFlag)) continue;
                             child.classList.add(patchedFlag);
@@ -58,8 +59,10 @@ module.exports = (qqntim) => {
                                     child.dispatchEvent(dblclickEvent);
                                 });
                         }
-                    });
+                    };
+                    let observer = new MutationObserver(refreshState);
                     observer.observe(list, { childList: true });
+                    refreshState();
                 });
         };
 
