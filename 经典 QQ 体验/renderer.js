@@ -13,6 +13,13 @@ module.exports = (qqntim) => {
     useRecentContactSize();
 
     qqntim.windowLoadPromise.then(() => {
+        if (process.platform == "win32")
+            qqntim.utils.ntCall(
+                "ns-ntApi-3",
+                "nodeIKernelSettingService/setSettingForNum",
+                [{ setting: new Map().set(19, 1) }, undefined]
+            );
+
         const watchNavFirstTab = () => {
             qqntim.utils
                 .waitForElement(`.sidebar__nav .nav-item:nth-child(1) .svg-highlight`)
