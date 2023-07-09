@@ -228,7 +228,8 @@ body {
         .popup,
         .shotcut,
         .storage-space,
-        .super-palette
+        .super-palette,
+        .qqntim-settings-panel-section
     ),
 .setting-main__content
     > div:not(.q-scroll-view)
@@ -238,7 +239,8 @@ body {
         .setting-item-title,
         .shotcut,
         .storage-space,
-        .super-palette
+        .super-palette,
+        .qqntim-settings-panel-section
     ),
 .setting-main__content
     > .q-scroll-view
@@ -249,7 +251,8 @@ body {
         .popup,
         .shotcut,
         .storage-space,
-        .super-palette
+        .super-palette,
+        .qqntim-settings-panel-section
     ),
 .setting-main__content
     > .q-scroll-view
@@ -260,7 +263,8 @@ body {
         .setting-item-title,
         .shotcut,
         .storage-space,
-        .super-palette
+        .super-palette,
+        .qqntim-settings-panel-section
     ),
 .setting-main__content
     > div:not(.q-scroll-view)
@@ -282,7 +286,8 @@ body {
 .panel-header,
 .chat-input-area,
 .q-toast-item,
-.file-list-normal-scroll {
+.file-list-normal-scroll,
+.qqntim-settings-panel-section-content {
     backdrop-filter: blur(30px);
 }
 
