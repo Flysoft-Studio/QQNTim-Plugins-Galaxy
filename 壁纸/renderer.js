@@ -1,12 +1,8 @@
-const qqntim = require('qqntim/renderer');
-
 const path = require("path");
-
 const s = path.sep;
 
-
 module.exports.default = class Entry {
-    constructor() {
+    onWindowLoaded() {
         const wallpaperFile = process.env["QQ_WALLPAPER_FILE"];
         if (wallpaperFile) {
             const wallpaperURL = encodeURI(`file://${wallpaperFile.replaceAll(s, "/")}`);
